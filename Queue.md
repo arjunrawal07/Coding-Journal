@@ -2,27 +2,27 @@
 
 ## Definition:
 
-A collection of entities maintained in a sequence that can be modified by the addition (/enqueue/) of entities at one end and removal (/dequeue/) of entities at the other end.
+A collection of entities maintained in a sequence that can be modified by the addition (enqueue) of entities at one end and removal (dequeue) of entities at the other end.
 
 Think of a ticketing counter:
 
 - You can’t cut the line (well, you aren’t supposed to)
 - The order of the line dictates who gets out first
 
-![Image of a Basic Queue](https://imgur.com/v7bYgfP)
+![Image of Basic Queue](https://i.imgur.com/v7bYgfP.jpg)
 
 ## Key Nuggets:
 
 - First In First Out (FIFO): First element added to the queue is the first element to be removed
 
 - What this means: All elements that come /before/ the element to be removed must be removed first.
-  - In the image below, A must be removed before B can be removed\*
+  - In the image below, A must be removed before B can be removed
 
-![Image of two elements being added into a queue](https://imgur.com/B4bVzS9)
+![Image of two elements being added into a queue](https://i.imgur.com/B4bVzS9.png)
 
 - Methods:
-  - add() - equivalent to .unshift()
-  - remove() - equivalent to .pop()
+  - `add()` - equivalent to `.unshift()`
+  - `remove()` - equivalent to `.pop()`
 
 ## Implementation: Chipotle, Cava, Subway
 
