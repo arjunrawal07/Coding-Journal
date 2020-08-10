@@ -20,3 +20,4 @@ Each concept is outlined in a markdown file with common subheadings:
 - .every() Helper Method
 - Queues
 - Stacks
+- Fibonacci Sequence
