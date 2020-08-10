@@ -52,7 +52,7 @@ When we reach n<2, we find the total number of fib(1) and add them together to r
 
 ### Solution 3: Memoization
 
-Store the arguments of each function call along with the result. If the function is called again with the _same arguments_, return the already calculated result that we have stored, instead of running the function again and duplicating the result (like in recursion) This optimizes the runtime.
+Store the arguments of each function call along with the result. If the function is called again with the _same arguments_, return the already calculated result that we have stored, instead of running the function again and duplicating the result (like in recursion). This optimizes the runtime.
 
 ```js
 //Define a function called 'memoize' that takes in a function 'fn' that will return a faster function
