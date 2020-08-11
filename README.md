@@ -21,3 +21,4 @@ Each concept is outlined in a markdown file with common subheadings:
 - Queues
 - Stacks
 - Fibonacci Sequence
+- Linked Lists
