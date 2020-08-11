@@ -4,9 +4,9 @@
 An ordered collection of data with nodes. In a singly linked list, each node contain data and information about the next node.  In a doubly linked list, each node points to the next and previous node.
 
 ## Key Nuggets:
-	* *Head* - the first node of a linked list
-	* *Tail* - the last node of a linked list. No reference to any other node
-	* Each node is like a bucket of data with a reference to the node after it
+* *Head* - the first node of a linked list
+* *Tail* - the last node of a linked list. No reference to any other node
+* Each node is like a bucket of data with a reference to the node after it
 	
 
 
@@ -19,6 +19,7 @@ Linked Lists can be used in many cases. For example, web-browsers utilize linked
 1. We’ll begin by implementing a Node class first.
 ```js
 class Node {
+    //Set 'next' to a default of null in case no 'next' node is passed into a new instance
 	constructor(data, next = null) {
 		this.data = data
 		this.next = null
@@ -42,6 +43,7 @@ class LinkedList {
 		this.head = null
 	}
 insertFirst (data) {
+    //Method takes in some data and we pass in the only existing node of the LinkedList as the 'next' node (defined in the Node Class constructor above)
 		this.head = new Node (data, this.head)
 	}
 size() {
